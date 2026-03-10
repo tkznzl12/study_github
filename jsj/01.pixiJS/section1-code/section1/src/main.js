@@ -1,3 +1,3 @@
-import main from './ex03';
+import main from './ex05';
 
 main();
