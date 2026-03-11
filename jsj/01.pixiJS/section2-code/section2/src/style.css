@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-size: 2rem;
+    background: white;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.page {
+    display: flex;
+}
+
+.content {
+    padding: 50px;
+}
+
+#app-canvas {
+    position: sticky;
+    top: 50px;
+}
