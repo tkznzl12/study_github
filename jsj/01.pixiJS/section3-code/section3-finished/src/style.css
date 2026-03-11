@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+}
+
+#app-canvas {
+    width: 360px;
+    margin: 30px auto;
+    display: block;
+    background: white;
+}
+
+#game-cover {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
