@@ -25,4 +25,16 @@ export default async function example() {
     plane.x = 30;
     plane.y = 30;
     app.stage.addChild(plane)
+
+    const { buffer } = plane.geometry.getAttribute('aPosition');
+    // console.log(buffer)
+
+    let timer = 0;
+    app.ticker.add(() => {
+        for(let i = 0; i < buffer.data.length; i ++){
+            buffer.data[i] += Math.sin(timer * 0.1 + i ) * 0.2 ;
+        }
+        buffer.update()
+        timer++;
+    })
 };
