@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+#app-canvas {
+    width: 360px;
+    margin: 30px auto;
+    background: white;
+}
