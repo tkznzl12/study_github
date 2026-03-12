@@ -1,10 +1,74 @@
 body {
     margin: 0;
-    background: black;
+    background: #f3e1c2; /* 운동장 흙바닥 느낌 */
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+#game-root {
+    position: relative;
+    width: 360px;
+    margin: 30px auto;
 }
 
 #app-canvas {
     width: 360px;
-    margin: 30px auto;
-    background: white;
+    background: transparent; /* 내부 색은 Pixi background로 처리 */
+    display: block;
+}
+
+#game-cover {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 6px;
+}
+
+#game-cover.hidden {
+    display: none;
+}
+
+.cover-inner {
+    text-align: center;
+    padding: 18px 16px;
+}
+
+.cover-title {
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    margin-bottom: 6px;
+}
+
+.cover-sub {
+    opacity: 0.85;
+    font-size: 13px;
+}
+
+.restart-button {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: none;
+    background: #ffffff;
+    color: #111111;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.restart-button:hover {
+    background: #f3f3f3;
+}
+
+.restart-button-hidden {
+    display: none;
 }
