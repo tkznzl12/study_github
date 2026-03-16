@@ -2,8 +2,8 @@ import { Application, Assets, AnimatedSprite, Container, Graphics, Rectangle, Te
 import "./style.css";
 
 const WIDTH = 360;
-const HEIGHT = 640;
-const FINISH_Y = 150;
+const HEIGHT = 1000;
+const FINISH_Y = 100;
 
 const PLAYER_COUNT = 10;
 const PLAYER_SIZE = 32;
